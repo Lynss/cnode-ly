@@ -1,0 +1,31 @@
+.headerComponent{
+  background: #444;
+  width: 100%;
+  min-height: 150px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  img{
+    display:block;
+    top: 5px;
+    margin:5px auto;
+    max-width: 33%;
+  }
+  ul{
+    list-style: none;
+    color: #e1e1e1  ;
+    display: flex;
+    flex-flow: wrap;
+    margin: 5px 0;
+    font-size: 13/14 rem;
+    bottom: 5px;
+    li{
+      line-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+  }
+}
