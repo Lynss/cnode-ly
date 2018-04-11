@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Header from '../components/header'
 import { BrowserRouter, Route } from 'react-router-dom'
+import Index from '../containers/index'
 
 class TotalRoute extends React.Component {
     render() {
         return(
             <BrowserRouter>
-                <Route component={Header}/>
+                <Route component={Index}/>
             </BrowserRouter>
         )
     }

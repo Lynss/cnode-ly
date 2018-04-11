@@ -1,0 +1,58 @@
+.itemComponent {
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+  padding: 5px 0 0 0;
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: #ffffff;
+  &::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    transform: scaleY(0.5);
+    background: #f0f0f0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+  }
+  >span:nth-of-type(1){
+    background: #80bd01;
+    color: #ffffff;
+    white-space: nowrap;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  .main{
+    width: 200px;
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    sup{
+      span:nth-of-type(1){
+        color: #9e78c0;
+      }
+      span:nth-of-type(3){
+        color: #b4b4b4;
+      }
+    }
+  }
+  >span:last-child {
+    white-space: nowrap;
+    align-self: flex-end;
+    color: #778087;
+    line-height: 25px;
+  }
+}

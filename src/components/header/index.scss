@@ -1,26 +1,41 @@
-.headerComponent{
+.headerComponent {
   background: #444;
   width: 100%;
-  min-height: 150px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  img{
-    display:block;
+  *{
+    margin: 5px 0;
+  }
+  img {
     top: 5px;
-    margin:5px auto;
+    margin: 5px auto;
     max-width: 33%;
   }
-  ul{
+  form{
+    input{
+      width: 61%;
+      outline-style: none;
+      &:focus {
+        background: url(https://cnodejs.org/public/images/search.e53b380a.hashed.png) no-repeat 4px 4px #ffffff;
+      }
+      border-radius: 20px;
+      background: #888 url(https://cnodejs.org/public/images/search.e53b380a.hashed.png) no-repeat 4px 4px;
+      padding: 3px 5px 3px 22px;
+      border: 0;
+      color: #666;
+    }
+  }
+  ul {
     list-style: none;
-    color: #e1e1e1  ;
-    display: flex;
+    color: #ccc;
+    display: inline-flex;
     flex-flow: wrap;
     margin: 5px 0;
     font-size: 13/14 rem;
     bottom: 5px;
-    li{
+    li {
       line-height: 40px;
       display: inline-flex;
       align-items: center;
