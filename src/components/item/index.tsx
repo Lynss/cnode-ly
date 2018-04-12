@@ -1,8 +1,8 @@
 import * as React from 'react'
 import './index.scss'
-import TopicStore from '../../stores/topicStore'
+import Topic from '../../models/topic'
 
-const Item = (props: {topic: TopicStore}) => (
+const Item = (props: {topic: Topic}) => (
     <div className={'itemComponent'}>
         <img src={props.topic.author.avatar_url} alt={'avatar'}/>
         <span>{'置顶'}</span>
