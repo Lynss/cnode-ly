@@ -16,6 +16,7 @@
   form{
     input{
       width: 61%;
+      transition: all .5s;
       outline-style: none;
       &:focus {
         background: url(https://cnodejs.org/public/images/search.e53b380a.hashed.png) no-repeat 4px 4px #ffffff;

@@ -9,7 +9,7 @@ import { Store } from '../../models/interfaces/interfaces'
 
 interface IndexProps {
     topics: Array<Topic>
-    loadData: (tab: string) => Promise<void>
+    loadData (tab: string): Promise<void>
 }
 
 @inject((stores: Store) => ({

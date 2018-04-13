@@ -3,7 +3,7 @@ import Topic from '../models/topic'
 import { apiTopics } from '../configs'
 import * as fetch from 'isomorphic-fetch'
 
-const asyncErrorHandler = (target: object, propertyKey: string, descriptor: PropertyDescriptor) => {
+const asyncErrorHandler = (target: any, propertyKey: string, descriptor: PropertyDescriptor) => {
     const func = descriptor.value
     return {
         get() {
@@ -21,9 +21,10 @@ const asyncErrorHandler = (target: object, propertyKey: string, descriptor: Prop
 
 class IndexStore {
     @observable topics: Array<Topic> = []
+
     @asyncErrorHandler
     @action
-    async loadData(tab: string): Promise<void> {
+    async loadData(tab: string) {
         const request = new Request(apiTopics + `?limit=10&page=1&tab=${tab}`, {
             method: 'GET'
         })
